@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+pandas
+mlxtend
+scikit-learn
+python-multipart
+pydantic

@@ -1,0 +1,146 @@
+Symptom1,Symptom2,Symptom3,Disease
+fever,cough,,flu
+cough,sore throat,,cold
+fever,chills,headache,malaria
+fever,rash,,measles
+nausea,vomiting,diarrhea,food poisoning
+cough,fever,chest pain,pneumonia
+runny nose,sneezing,,cold
+loss of taste,loss of smell,,covid-19
+fever,cough,shortness of breath,covid-19
+headache,nausea,,migraine
+blurred vision,sensitivity to light,,migraine
+seizures,confusion,,epilepsy
+memory loss,disorientation,,alzheimers
+tremor,stiffness,,parkinsons
+dizziness,nausea,,vertigo
+difficulty speaking,weakness on one side,,stroke
+unsteady walk,shaking hands,,parkinsons
+sudden headache,vision problems,,stroke
+increased thirst,frequent urination,,diabetes
+weight loss,fatigue,,diabetes
+chest pain,shortness of breath,,heart disease
+fatigue,swollen feet,,heart failure
+persistent cough,weight loss,,lung cancer
+chest pain,coughing blood,,lung cancer
+joint pain,stiffness,,arthritis
+back pain,joint pain,,arthritis
+high blood pressure,headache,,hypertension
+obesity,fatigue,,hypertension
+abdominal pain,nausea,,gastritis
+vomiting,stomach pain,,gastritis
+constipation,abdominal bloating,,constipation
+shortness of breath,wheezing,,asthma
+cough,wheezing,,bronchitis
+sore throat,cough,,bronchitis
+loss of appetite,nausea,,food poisoning
+fever,body ache,,dengue
+rash,itching,,allergy
+headache,fever,,migraine
+chest tightness,shortness of breath,,asthma
+joint swelling,pain,,arthritis
+fatigue,blurred vision,,diabetes
+chest pain,fatigue,,heart disease
+fever,vomiting,,typhoid
+cough,fever,,flu
+headache,dizziness,,migraine
+vomiting,diarrhea,,food poisoning
+fever,sore throat,cough,flu
+cough,runny nose,,cold
+fever,chills,sweating,malaria
+nausea,abdominal pain,loss of appetite,food poisoning
+fever,headache,body ache,dengue
+rash,fever,itching,allergy
+chest pain,shortness of breath,fatigue,heart disease
+joint pain,swelling,stiffness,arthritis
+fatigue,weight loss,increased thirst,diabetes
+cough,fever,headache,flu
+cough,sore throat,fever,cold
+fever,chills,body pain,malaria
+fever,rash,itching,measles
+nausea,vomiting,diarrhea,food poisoning
+cough,fever,chest pain,pneumonia
+runny nose,sneezing,cough,cold
+loss of taste,loss of smell,fever,covid-19
+fever,cough,shortness of breath,covid-19
+headache,nausea,blurred vision,migraine
+blurred vision,sensitivity to light,headache,migraine
+seizures,confusion,dizziness,epilepsy
+memory loss,disorientation,confusion,alzheimers
+tremor,stiffness,unsteady walk,parkinsons
+dizziness,nausea,fatigue,vertigo
+difficulty speaking,weakness on one side,confusion,stroke
+unsteady walk,shaking hands,tremor,parkinsons
+sudden headache,vision problems,nausea,stroke
+increased thirst,frequent urination,fatigue,diabetes
+weight loss,fatigue,loss of appetite,diabetes
+chest pain,shortness of breath,fatigue,heart disease
+fatigue,swollen feet,shortness of breath,heart failure
+persistent cough,weight loss,chest pain,lung cancer
+chest pain,coughing blood,shortness of breath,lung cancer
+joint pain,stiffness,swelling,arthritis
+back pain,joint pain,stiffness,arthritis
+high blood pressure,headache,fatigue,hypertension
+obesity,fatigue,headache,hypertension
+abdominal pain,nausea,vomiting,gastritis
+vomiting,stomach pain,nausea,gastritis
+constipation,abdominal bloating,pain,constipation
+shortness of breath,wheezing,chest tightness,asthma
+cough,wheezing,shortness of breath,bronchitis
+sore throat,cough,runny nose,bronchitis
+loss of appetite,nausea,vomiting,food poisoning
+fever,body ache,headache,dengue
+rash,itching,fever,allergy
+headache,fever,dizziness,migraine
+chest tightness,shortness of breath,cough,asthma
+joint swelling,pain,redness,arthritis
+fatigue,blurred vision,headache,diabetes
+chest pain,fatigue,shortness of breath,heart disease
+fever,vomiting,diarrhea,typhoid
+cough,fever,sore throat,flu
+headache,dizziness,blurred vision,migraine
+vomiting,diarrhea,nausea,food poisoning
+fever,sore throat,cough,flu
+cough,runny nose,sneezing,cold
+fever,chills,sweating,malaria
+nausea,abdominal pain,loss of appetite,food poisoning
+fever,headache,body ache,dengue
+rash,fever,itching,allergy
+chest pain,shortness of breath,fatigue,heart disease
+joint pain,swelling,stiffness,arthritis
+fatigue,weight loss,increased thirst,diabetes
+cough,fever,headache,flu
+cough,sore throat,fever,cold
+fever,chills,body pain,malaria
+fever,rash,itching,measles
+nausea,vomiting,diarrhea,food poisoning
+cough,fever,chest pain,pneumonia
+runny nose,sneezing,cough,cold
+loss of taste,loss of smell,fever,covid-19
+fever,cough,shortness of breath,covid-19
+headache,nausea,blurred vision,migraine
+blurred vision,sensitivity to light,headache,migraine
+seizures,confusion,dizziness,epilepsy
+memory loss,disorientation,confusion,alzheimers
+tremor,stiffness,unsteady walk,parkinsons
+dizziness,nausea,fatigue,vertigo
+difficulty speaking,weakness on one side,confusion,stroke
+unsteady walk,shaking hands,tremor,parkinsons
+sudden headache,vision problems,nausea,stroke
+increased thirst,frequent urination,fatigue,diabetes
+weight loss,fatigue,loss of appetite,diabetes
+chest pain,shortness of breath,fatigue,heart disease
+fatigue,swollen feet,shortness of breath,heart failure
+persistent cough,weight loss,chest pain,lung cancer
+chest pain,coughing blood,shortness of breath,lung cancer
+joint pain,stiffness,swelling,arthritis
+back pain,joint pain,stiffness,arthritis
+high blood pressure,headache,fatigue,hypertension
+obesity,fatigue,headache,hypertension
+abdominal pain,nausea,vomiting,gastritis
+vomiting,stomach pain,nausea,gastritis
+constipation,abdominal bloating,pain,constipation
+shortness of breath,wheezing,chest tightness,asthma
+cough,wheezing,shortness of breath,bronchitis
+sore throat,cough,runny nose,bronchitis
+loss of appetite,nausea,vomiting,food poisoning

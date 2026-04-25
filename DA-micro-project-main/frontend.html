@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom Disease Predictor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      max-width: 500px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #result {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+    .disease-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .disease-card strong {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .confidence-bar {
+      height: 12px;
+      background: #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    .confidence-bar div {
+      height: 100%;
+      background-color: #4CAF50;
+      width: 0%;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      font-size: 12px;
+      line-height: 12px;
+      border-radius: 6px;
+    }
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Symptom Disease Predictor</h1>
+
+  <form id="symptomForm">
+    <input type="text" name="symptom1" placeholder="Symptom 1" required>
+    <input type="text" name="symptom2" placeholder="Symptom 2">
+    <input type="text" name="symptom3" placeholder="Symptom 3">
+    <button type="submit">Predict Disease</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById("symptomForm");
+    const resultDiv = document.getElementById("result");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const symptoms = [
+        form.symptom1.value,
+        form.symptom2.value,
+        form.symptom3.value
+      ].filter(s => s.trim() !== "");
+
+      if(symptoms.length === 0){
+        resultDiv.innerHTML = "<p class='error'>Please enter at least one symptom.</p>";
+        return;
+      }
+
+      try {
+        const response = await fetch("http://localhost:8000/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ symptoms })
+        });
+
+        const data = await response.json();
+
+        if(!data.predictions || data.predictions.length === 0){
+          resultDiv.innerHTML = "<p class='error'>No predictions found for the given symptoms.</p>";
+          return;
+        }
+
+        // Create disease cards
+        let html = "";
+        data.predictions.forEach(pred => {
+          const confidencePercent = (pred.confidence * 100).toFixed(1);
+          html += `
+            <div class="disease-card">
+              <strong>${pred.consequent.join(", ")}</strong>
+              <div class="confidence-bar">
+                <div style="width: ${confidencePercent}%;"></div>
+              </div>
+              Confidence: ${confidencePercent}%
+            </div>`;
+        });
+
+        resultDiv.innerHTML = html;
+
+      } catch (error) {
+        console.error(error);
+        resultDiv.innerHTML = "<p class='error'>Error: Could not fetch predictions.</p>";
+      }
+    });
+  </script>
+</body>
+</html>
